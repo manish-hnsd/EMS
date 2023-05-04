@@ -6,17 +6,22 @@ import com.hms.entity.Appointment;
 import com.hms.exception.ResourceNotFoundException;
 import com.hms.mapper.AppointmentMapper;
 import com.hms.services.AppointmentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class AppointmentServiceImpl implements AppointmentService {
-    @Autowired
     private AppointmentRepository appointmentRepository;
-    @Autowired
     private AppointmentMapper appointmentMapper;
+
+    public AppointmentServiceImpl(AppointmentRepository appointmentRepository, AppointmentMapper appointmentMapper){
+        this.appointmentMapper=appointmentMapper;
+        this.appointmentRepository=appointmentRepository;
+    }
+
+    public AppointmentServiceImpl() {
+    }
 
     @Override
     public AppointmentDTO createAppointment(AppointmentDTO appointmentDTO) {

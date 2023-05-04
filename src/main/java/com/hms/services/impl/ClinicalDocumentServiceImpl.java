@@ -11,13 +11,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ClinicalDocumentServiceImpl implements ClinicalDocumentService {
-
-    @Autowired
     private ClinicalDocumentRepository clinicalDocumentRepository;
-    @Autowired
     private ClinicalDocumentMapper clinicalDocumentMapper;
-    @Autowired
-    private ClinicalDocumentService clinicalDocumentService;
+
+    public ClinicalDocumentServiceImpl(ClinicalDocumentRepository clinicalDocumentRepository, ClinicalDocumentMapper clinicalDocumentMapper){
+        this.clinicalDocumentMapper=clinicalDocumentMapper;
+        this.clinicalDocumentRepository=clinicalDocumentRepository;
+    }
 
     @Override
     public ClinicalDocumentDTO createClinicalDocument(ClinicalDocumentDTO clinicalDocumentDTO) {

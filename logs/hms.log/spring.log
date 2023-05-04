@@ -1,35 +1,34 @@
-2023-02-08T18:27:56.714+05:30  INFO 78632 --- [restartedMain] c.h.HospitalManagementSystemApplication  : Starting HospitalManagementSystemApplication using Java 17.0.5 with PID 78632 (C:\Users\hansd\Downloads\hms\hms\target\classes started by hansd in C:\Users\hansd\Downloads\hms\hms)
-2023-02-08T18:27:56.723+05:30  INFO 78632 --- [restartedMain] c.h.HospitalManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-02-08T18:27:56.830+05:30  INFO 78632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-02-08T18:27:56.830+05:30  INFO 78632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-02-08T18:27:58.029+05:30  INFO 78632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-08T18:27:58.299+05:30  INFO 78632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 255 ms. Found 7 JPA repository interfaces.
-2023-02-08T18:27:58.692+05:30  INFO 78632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97396e29-6d11-3019-9f11-f7f36dc94d76
-2023-02-08T18:27:59.601+05:30  INFO 78632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-08T18:27:59.614+05:30  INFO 78632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-08T18:27:59.615+05:30  INFO 78632 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-08T18:27:59.708+05:30  INFO 78632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-08T18:27:59.708+05:30  INFO 78632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2874 ms
-2023-02-08T18:27:59.962+05:30  INFO 78632 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-02-08T18:28:00.025+05:30  INFO 78632 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-02-08T18:28:00.331+05:30  WARN 78632 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-02-08T18:28:00.490+05:30  INFO 78632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-08T18:28:00.499+05:30  WARN 78632 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2023-02-08T18:28:00.878+05:30  INFO 78632 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47432a5d
-2023-02-08T18:28:00.881+05:30  INFO 78632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-08T18:28:00.898+05:30  INFO 78632 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-02-08T18:28:00.899+05:30  WARN 78632 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-02-08T18:28:02.075+05:30  INFO 78632 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-02-08T18:28:02.081+05:30  INFO 78632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-02-08T18:28:02.424+05:30  WARN 78632 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appointmentController': Unsatisfied dependency expressed through field 'appointmentService': Error creating bean with name 'appointmentServiceImpl': Unsatisfied dependency expressed through field 'appointmentMapper': No qualifying bean of type 'com.hms.mapper.AppointmentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2023-02-08T18:28:02.425+05:30  INFO 78632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-08T18:28:02.429+05:30  INFO 78632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-08T18:28:02.439+05:30  INFO 78632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-02-08T18:28:02.442+05:30  INFO 78632 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-02-08T18:28:02.457+05:30  INFO 78632 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2023-02-11T02:11:36.785+05:30  INFO 77740 --- [restartedMain] c.h.HospitalManagementSystemApplication  : Starting HospitalManagementSystemApplication using Java 17.0.5 with PID 77740 (C:\Users\hansd\Downloads\hms\hms\target\classes started by hansd in C:\Users\hansd\Downloads\hms\hms)
+2023-02-11T02:11:37.008+05:30  INFO 77740 --- [restartedMain] c.h.HospitalManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-11T02:11:38.541+05:30  INFO 77740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-11T02:11:38.543+05:30  INFO 77740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-11T02:11:41.095+05:30  INFO 77740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-11T02:11:41.347+05:30  INFO 77740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 7 JPA repository interfaces.
+2023-02-11T02:11:46.645+05:30  INFO 77740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-11T02:11:46.694+05:30  INFO 77740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-11T02:11:46.694+05:30  INFO 77740 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-11T02:11:46.921+05:30  INFO 77740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-11T02:11:46.923+05:30  INFO 77740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8378 ms
+2023-02-11T02:11:54.056+05:30  INFO 77740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-11T02:11:54.346+05:30  INFO 77740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-11T02:11:55.107+05:30  WARN 77740 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-11T02:11:55.339+05:30  INFO 77740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-11T02:11:55.347+05:30  WARN 77740 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-02-11T02:11:56.964+05:30  INFO 77740 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7349673e
+2023-02-11T02:11:56.969+05:30  INFO 77740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-11T02:11:57.023+05:30  INFO 77740 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-02-11T02:11:57.033+05:30  WARN 77740 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-02-11T02:12:00.234+05:30  INFO 77740 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-11T02:12:00.303+05:30  INFO 77740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-11T02:12:00.989+05:30  WARN 77740 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clinicalDocumentController': Unsatisfied dependency expressed through field 'clinicalDocumentService': Error creating bean with name 'clinicalDocumentServiceImpl' defined in file [C:\Users\hansd\Downloads\hms\hms\target\classes\com\hms\services\impl\ClinicalDocumentServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.hms.mapper.ClinicalDocumentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-02-11T02:12:00.990+05:30  INFO 77740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-11T02:12:00.996+05:30  INFO 77740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-11T02:12:01.028+05:30  INFO 77740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-11T02:12:01.036+05:30  INFO 77740 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-11T02:12:01.059+05:30  INFO 77740 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-02-08T18:28:02.486+05:30 ERROR 78632 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2023-02-11T02:12:01.104+05:30 ERROR 77740 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
 ***************************
 APPLICATION FAILED TO START
@@ -37,7 +36,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field appointmentMapper in com.hms.services.impl.AppointmentServiceImpl required a bean of type 'com.hms.mapper.AppointmentMapper' that could not be found.
+Parameter 1 of constructor in com.hms.services.impl.ClinicalDocumentServiceImpl required a bean of type 'com.hms.mapper.ClinicalDocumentMapper' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -45,5 +44,5 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'com.hms.mapper.AppointmentMapper' in your configuration.
+Consider defining a bean of type 'com.hms.mapper.ClinicalDocumentMapper' in your configuration.
 

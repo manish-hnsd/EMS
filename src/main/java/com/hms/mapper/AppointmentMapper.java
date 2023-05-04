@@ -9,8 +9,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
-@Component
 @Mapper
 public interface AppointmentMapper {
     //AppointmentMapper INSTANCE = Mappers.getMapper(AppointmentMapper.class);
